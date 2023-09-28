@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Batch run suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Batch run tests(failed)">
+    <classes>
+      <class name="com.learnReports.TutorialsNinjaLoginTest">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="registerAtTutorialsNinjaTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.learnReports.TutorialsNinjaLoginTest -->
+      <class name="com.learnReports.RedIffCreateAccountTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="openBrowser"/>
+          <include name="createRedIffMailAccountTest"/>
+        </methods>
+      </class> <!-- com.learnReports.RedIffCreateAccountTest -->
+      <class name="com.learnReports.TutorialsNinjaRegisterTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="openBrowser"/>
+          <include name="registerAtTutorialsNinjaTest"/>
+        </methods>
+      </class> <!-- com.learnReports.TutorialsNinjaRegisterTest -->
+    </classes>
+  </test> <!-- Batch run tests(failed) -->
+</suite> <!-- Failed suite [Batch run suite] -->

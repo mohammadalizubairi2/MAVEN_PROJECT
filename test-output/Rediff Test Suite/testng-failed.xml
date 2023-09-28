@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Rediff Test Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="password" value="Selenium@123"/>
+  <parameter name="url" value="https://mail.rediff.com/cgi-bin/login.cgi"/>
+  <parameter name="Browser" value="chrome"/>
+  <parameter name="username" value="seleniumpanda@rediffmail.com"/>
+  <test thread-count="5" name="Rediff Tests(failed)">
+    <classes>
+      <class name="com.learnReports.RedIffLoginTest">
+        <methods>
+          <include name="loginRedIffMailTest"/>
+          <include name="openBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.learnReports.RedIffLoginTest -->
+    </classes>
+  </test> <!-- Rediff Tests(failed) -->
+</suite> <!-- Failed suite [Rediff Test Suite] -->

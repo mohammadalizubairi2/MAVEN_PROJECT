@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TN Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="TN Tests(failed)">
+    <classes>
+      <class name="com.learnReports.TutorialsNinjaRegisterTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="openBrowser"/>
+          <include name="registerAtTutorialsNinjaTest"/>
+        </methods>
+      </class> <!-- com.learnReports.TutorialsNinjaRegisterTest -->
+      <class name="com.learnReports.TutorialsNinjaLoginTest">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="registerAtTutorialsNinjaTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.learnReports.TutorialsNinjaLoginTest -->
+    </classes>
+  </test> <!-- TN Tests(failed) -->
+</suite> <!-- Failed suite [TN Suite] -->
